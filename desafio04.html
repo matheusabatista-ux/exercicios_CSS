@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desafio 04 - menu horizontal</title>
+    <style>
+        *{
+            margin: 0 auto;
+            padding: 0;
+        }
+        .menu{
+            background-color: black;
+            width: 100%;
+            height: 40px;
+        }
+        .menu ul{
+            padding: 0;
+            max-width: 400px;
+            text-align: center;
+        }
+        .menu ul li{
+            background-color: black;
+            color: aquamarine;
+            float: left;
+            width: 100px;
+            height: 40px;
+            display: inline-block;
+            text-align: center;
+            line-height: 40px;
+            position: relative;
+        }
+        .menu ul ul{
+            display: none;
+        }
+        .menu ul li:hover > ul{
+            display: block;
+        }
+        .menu li:hover{
+            background-color: rgb(2, 77, 77);
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+        <li>Banana</li>
+        <li>Maça</li>
+        <li>Abacate
+            <ul>
+                <li>Avocado</li>
+                <li>Nacional</li>
+                <li>Importado</li>
+            </ul>
+        </li>
+        <li>Abacaxi</li>
+    </ul>
+</div>
+   
+</body>
+</html>
